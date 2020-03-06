@@ -16,7 +16,7 @@ spec:
         app: APP-Z
     spec:
       containers:
-      - image: amitmohleji/APP-Z:{{BUILD_NUMBER}}
+      - image: amitmohleji/appz:{{BUILD_NUMBER}}
         name: APP-Z
 ---
 apiVersion: v1
