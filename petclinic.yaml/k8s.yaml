@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: APP-Z-d
-  namespace: APP-Z
+  namespace: petclinic
   labels:
     app: APP-Z
 spec:
@@ -23,7 +23,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: APP-Z
-  namespace: APP-Z
+  namespace: petclinic
 spec:
   selector: 
     app: APP-Z
@@ -35,7 +35,7 @@ kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
   name: APP-Z
-  namespace: APP-Z
+  namespace: petclinic
 spec:
   to:
     kind: Service
